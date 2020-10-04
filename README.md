@@ -32,12 +32,12 @@ Pio-RCI is an experimental set of utilities for connection management through a 
 
 <p>This module makes use of <a aria-label="platformio" href="https://platformio.org/">platformio</a> to leverage the awesome connection features of the ESP family boards, it's been tested with the <a aria-label="esp32" href="https://www.espressif.com/en/products/socs/esp32">Esp32</a> but can definitely be expanded to other models over time.</p>
 
-- [:hammer_and_wrench: Getting Started](#-getting-started)
-- [:rocket: API Reference](#-api-reference)
+- [🛠️ Getting Started](#-getting-started)
+- [🚀 API Reference](#-api-reference)
 
 ---
 
-## ️:hammer_and_wrench: Getting Started
+## ️🛠️ Getting Started
 
 <p>To run this project and start interacting with your board, you'll have to setup <a aria-label="platformio" href="https://platformio.org/install/integration">platformio accordingly to your IDE</a> of choice.
 
@@ -49,7 +49,7 @@ Important to note that this project it pre-set with the `esp32doit-devkit-v1` bo
 
 ---
 
-## ️:rocket: API Reference
+## 🚀 API Reference
 
 The endpoints exposed once you've done a successful build and uploaded your code to the board are dynamic and set based on the Network Mode the board is currently running, that means:
 
