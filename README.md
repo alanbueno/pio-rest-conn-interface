@@ -16,7 +16,7 @@
 
 # Pio-Rest-Conn-Interface &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alanbueno/pio-rest-conn-interface/blob/master/LICENSE)
 
-Pio-RCI is an experimental set of utilities for connection management through a REST interface.
+Pio-RCI is an experimental set of utilities for connection management of ESP boards through a REST interface.
 
 ---
 
