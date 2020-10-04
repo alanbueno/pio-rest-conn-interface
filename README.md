@@ -59,7 +59,7 @@ The endpoints exposed once you've done a successful build and uploaded your code
 * <AP_SSID> = name for the AP network that the board creates, pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L7)
 ```
 
-- AP mode - Access Point network mode (local net from board):
+#### AP mode - Access Point network mode (local net from board):
 
   - you should be connected to the `AP_SSID` wifi network
 
@@ -121,7 +121,7 @@ Note: AP is the mode the board will automatically switch to if:
 * <BOARD_IP_ADDRESS> = the ip that the board assumes after successfully connecting to a network provider (e.g. wifi router), it's logged to the Serial Monitor and can be actively sent from the board to any storage system, e.g. remote databse, IoT info broker, ...
 ```
 
-- STA mode - Station network mode (internet):
+#### STA mode - Station network mode (internet):
 
   - you should be connected to the same wifi network as the board successfully did
 
@@ -171,7 +171,7 @@ Note: AP is the mode the board will automatically switch to if:
 - Progressive Retry Mechanism, first reconnection attempt to the network provider after N seconds `RECONNECTION_INTERVAL`, then 2 \* N seconds, 3 \* N seconds, ... all the way to the `MAX_RETRY_ATTEMPTS`;
 - Optional remote logging placeholder at `Utils.cpp`;
 
-### To do:
+#### To do:
 - Unit tests;
 - Support ESP8266 ?
 - `make` file and CI;
