@@ -14,7 +14,7 @@
   </a>
 </p>
 
-# Pio-Rest-Conn-Interface &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alanbueno/pio-rest-conn-interface/blob/master/LICENSE)
+# Pio-Rest-Conn-Interface &middot;
 
 Pio-RCI is an experimental set of utilities for connection management of ESP boards through a REST interface.
 
@@ -63,7 +63,7 @@ The endpoints exposed once you've done a successful build and uploaded your code
 
   - you should be connected to the `AP_SSID` wifi network
 
-  - `GET` - http://<PRE_SET_DNS_DOMAIN_NAME>/ap/ping
+  - `GET` - `http://<PRE_SET_DNS_DOMAIN_NAME>/ap/ping`
 
     Response `200 Ok`:
 
@@ -73,7 +73,7 @@ The endpoints exposed once you've done a successful build and uploaded your code
     }
     ```
 
-  - `POST` - http://<PRE_SET_DNS_DOMAIN_NAME>/ap/switch-connection-to/sta
+  - `POST` - `http://<PRE_SET_DNS_DOMAIN_NAME>/ap/switch-connection-to/sta`
 
     Payload:
 
@@ -94,7 +94,7 @@ The endpoints exposed once you've done a successful build and uploaded your code
     }
     ```
 
-  - `POST` - http://<PRE_SET_DNS_DOMAIN_NAME>/sta/switch-connection-to/ap
+  - `POST` - `http://<PRE_SET_DNS_DOMAIN_NAME>/sta/switch-connection-to/ap`
 
     `Fallback route (reverse mode), in case of redundant attempts of connection, when the mode's already up but the client's still trying to enable it`
 
@@ -125,7 +125,7 @@ Note: AP is the mode the board will automatically switch to if:
 
   - you should be connected to the same wifi network as the board successfully did
 
-  - `GET` - http://<BOARD_IP_ADDRESS>/sta/ping
+  - `GET` - `http://<BOARD_IP_ADDRESS>/sta/ping`
 
     Response `200 Ok`:
 
@@ -135,7 +135,7 @@ Note: AP is the mode the board will automatically switch to if:
     }
     ```
 
-  - `POST` - http://<BOARD_IP_ADDRESS>/sta/switch-connection-to/ap
+  - `POST` - `http://<BOARD_IP_ADDRESS>/sta/switch-connection-to/ap`
 
     Payload: no payload
 
@@ -147,7 +147,7 @@ Note: AP is the mode the board will automatically switch to if:
     }
     ```
 
-  - `POST` - http://<BOARD_IP_ADDRESS>/ap/switch-connection-to/sta
+  - `POST` - `http://<BOARD_IP_ADDRESS>/ap/switch-connection-to/sta`
 
     `Fallback route (reverse mode), in case of redundant attempts of connection, when the mode's already up but the client's still trying to enable it`
 
