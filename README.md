@@ -37,7 +37,7 @@ Pio-RCI is an experimental set of utilities for connection management through a 
 
 ---
 
-## Getting Started
+## 🛠️ Getting Started
 
 <p>To run this project and start interacting with your board, you'll have to setup <a aria-label="platformio" href="https://platformio.org/install/integration">platformio accordingly to your IDE</a> of choice.
 
