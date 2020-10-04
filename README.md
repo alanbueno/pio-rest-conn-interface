@@ -43,7 +43,7 @@ Pio-RCI is an experimental set of utilities for connection management through a 
 
 Once that's done, grab your <a aria-label="esp32" href="https://www.espressif.com/en/products/socs/esp32">board with a Esp32-MCU</a>, plug it in and make sure it shows up on your PlatformIO > Devices section.
 
-Important to note that this project it pre-set with the `esp32doit-devkit-v1` board setting in the [platformio.ini](platformio.ini), which is the board we've been testing it with. If you're using a different board, make sure to find it on the PlatformIO > Board Explorer, and replace `esp32doit-devkit-v1` with the PlatformIO board name matching yours.
+Important to note that this project is pre-set with the `esp32doit-devkit-v1` board setting in the [platformio.ini](platformio.ini), which is the board we've been testing it with. If you're using a different board, make sure to find it on the PlatformIO > Board Explorer, and replace `esp32doit-devkit-v1` with the PlatformIO board name matching yours.
 
 </p>
 
