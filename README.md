@@ -43,7 +43,7 @@ Pio-RCI is an experimental set of utilities for connection management through a 
 
 Once that's done, grab your <a aria-label="esp32" href="https://www.espressif.com/en/products/socs/esp32">board with a Esp32-MCU</a>, plug it in and make sure it shows up on your PlatformIO > Devices section.
 
-Important to note that this project is pre-set with the `esp32doit-devkit-v1` board setting in the [platformio.ini](platformio.ini), which is the board we've been testing it with. If you're using a different board, make sure to find it on the PlatformIO > Board Explorer, and replace `esp32doit-devkit-v1` with the PlatformIO board name matching yours.
+Important to note that this project is pre-set with the `esp32doit-devkit-v1` board setting in the [platformio.ini](platformio.ini#L15), which is the board we've been testing it with. If you're using a different board, make sure to find it on the PlatformIO > Board Explorer, and replace `esp32doit-devkit-v1` with the PlatformIO board name matching yours.
 
 </p>
 
@@ -53,9 +53,9 @@ Important to note that this project is pre-set with the `esp32doit-devkit-v1` bo
 
 The endpoints exposed once you've done a successful build and uploaded your code to the board are dynamic and set based on the Network Mode the board is currently running, that means:
 
-\* <PRE_SET_DNS_DOMAIN_NAME> = `DOMAIN_NAME` pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp)
+\* <PRE_SET_DNS_DOMAIN_NAME> = `DOMAIN_NAME` pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L8)
 
-\*`AP_SSID` = name for the AP network that the board creates, pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp)
+\* <AP_SSID> = name for the AP network that the board creates, pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L7)
 
 - AP mode - Access Point network mode (local net from board):
 
