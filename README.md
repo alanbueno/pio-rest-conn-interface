@@ -53,9 +53,11 @@ Important to note that this project is pre-set with the `esp32doit-devkit-v1` bo
 
 The endpoints exposed once you've done a successful build and uploaded your code to the board are dynamic and set based on the Network Mode the board is currently running, that means:
 
-\* <PRE_SET_DNS_DOMAIN_NAME> = `DOMAIN_NAME` pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L8)
+```
+* <PRE_SET_DNS_DOMAIN_NAME> = `DOMAIN_NAME` pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L8)
 
-\* <AP_SSID> = name for the AP network that the board creates, pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L7)
+* <AP_SSID> = name for the AP network that the board creates, pre set on [NetworkManager.cpp](src/LocalWebServer/NetworkManager.cpp#L7)
+```
 
 - AP mode - Access Point network mode (local net from board):
 
@@ -113,7 +115,11 @@ Note: AP is the mode the board will automatically switch to if:
   - connected, but eventually the connection provider's offline and the connection was lost;
 ```
 
-\* <BOARD_IP_ADDRESS> = the ip that the board assumes after successfully connecting to a network provider (e.g. wifi router), it's logged to the Serial Monitor and can be actively sent from the board to any storage system, e.g. remote databse, IoT info broker, ...
+---
+
+```
+* <BOARD_IP_ADDRESS> = the ip that the board assumes after successfully connecting to a network provider (e.g. wifi router), it's logged to the Serial Monitor and can be actively sent from the board to any storage system, e.g. remote databse, IoT info broker, ...
+```
 
 - STA mode - Station network mode (internet):
 
@@ -164,6 +170,11 @@ Note: AP is the mode the board will automatically switch to if:
 - Fallback routes (reverse mode), in case of redundant attempts of connection, when the mode's already up but the client's still trying to enable it;
 - Progressive Retry Mechanism, first reconnection attempt to the network provider after N seconds `RECONNECTION_INTERVAL`, then 2 \* N seconds, 3 \* N seconds, ... all the way to the `MAX_RETRY_ATTEMPTS`;
 - Optional remote logging placeholder at `Utils.cpp`;
+
+### To do:
+- Unit tests;
+- Support ESP8266 ?
+- `make` file and CI;
 
 ---
 
